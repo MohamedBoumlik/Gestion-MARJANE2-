@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../public/styles.css" />
+    <title>Promotions Dash</title>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center primary-text">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    <h2 class="fs-2 m-0" >Center Admin's dashboard</h2>
+                </div>
+
+            </nav>
+
+            <div class="container-fluid px-4">
+
+                <div class="row my-5 primary-text">
+
+                    <div class="col-md-6">
+                        <h3 class="fs-4 mb-3">Promotions</h3>
+                    </div>
+
+                </div>
+
+                <div class="col">
+                    <table class="table bg-white rounded shadow-sm  table-hover">
+                        <thead>
+                            <tr>
+                                <!-- <th style="text-align: center; vertical-align: middle;">ID</th> -->
+                                <th style="text-align: center; vertical-align: middle;">Percentage</th>
+                                <th style="text-align: center; vertical-align: middle;">Rayon</th>
+                                <th style="text-align: center; vertical-align: middle;">Chef's Name</th>
+                                <th style="text-align: center; vertical-align: middle;">Status</th>
+                                <th style="text-align: center; vertical-align: middle;">Comments</th>
+                                <th style="text-align: center; vertical-align: middle;">Fidelité</th>
+                                <th style="text-align: center; vertical-align: middle;">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table">
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../data/promotions.js"></script>
+
+
+</body>
+
+</html>
