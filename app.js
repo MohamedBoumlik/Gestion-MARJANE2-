@@ -13,6 +13,14 @@ app.get('/', (req,res)=> {
     res.render('view/login')
 });
 
+app.get('/Center_Admin', (req,res)=> {
+    res.render('view/loginCA')
+});
+
+app.get('/chef', (req,res)=> {
+    res.render('view/loginChef')
+});
+
 app.get("/AdminDash", (req,res)=> {
     res.render('view/Admin', )
 });

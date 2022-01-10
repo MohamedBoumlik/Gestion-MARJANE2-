@@ -35,6 +35,7 @@ addCA = () => {
 }
 
 // ------------------------- DELETE ------------------------- 
+
 deleteCA = (id) => {
 
   if (confirm("Are you sure you want to delete this user ?")){
@@ -46,4 +47,3 @@ deleteCA = (id) => {
   }
   
 }
-
