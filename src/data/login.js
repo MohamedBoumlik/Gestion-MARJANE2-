@@ -8,7 +8,7 @@ login = () => {
         password: password
     })
     .then(res => {
-        document.cookie = "admin token = " + res.data ,
+        document.cookie = "adminToken = " + res.data ,
         window.location.href='AdminDash'
     })
     .catch(err =>  console.log(err))
@@ -26,7 +26,7 @@ centerLog = () => {
         password: password
     })
     .then(res => {
-        document.cookie = "center admin token = " + res.data,
+        document.cookie = "CAtoken = " + res.data,
         window.location.href='centerAdminDash'
     })
     .catch(err =>  console.log(err))
@@ -44,8 +44,8 @@ chefLog = () => {
         password: password
     })
     .then(res => {
-        document.cookie = "chef token = " + res.data 
-        // window.location.href='centerAdminDash'
+        document.cookie = "chefToken = " + res.data 
+        window.location.href='ChefDash'
     })
     .catch(err =>  console.log(err))
     

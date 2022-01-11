@@ -1,13 +1,14 @@
 const express = require('express');
 const app = express();
-// const {deleteCenter} = require('./src/controller/admin');
-
-// console.log(dataGet);
+const cookieParser = require('cookie-parser');
 
 app.set('views','./src');
 app.set('view engine','ejs');
 
 app.use(express.static('src'))
+app.use(cookieParser())
+
+const {middlewareAdmin, middlewareCA, middlewareChef} = require('./middleware')
 
 app.get('/', (req,res)=> {
     res.render('view/login')
@@ -21,12 +22,16 @@ app.get('/chef', (req,res)=> {
     res.render('view/loginChef')
 });
 
-app.get("/AdminDash", (req,res)=> {
+app.get("/AdminDash",middlewareAdmin, (req,res)=> {
     res.render('view/Admin', )
 });
 
-app.get("/centerAdminDash/", (req,res)=> {
+app.get("/centerAdminDash/", middlewareCA, (req,res)=> {
     res.render('view/centerAdmin')
+});
+
+app.get("/ChefDash", middlewareChef, (req,res)=> {
+    res.render('view/chef')
 });
 
 app.get('/promotions', (req,res)=> {

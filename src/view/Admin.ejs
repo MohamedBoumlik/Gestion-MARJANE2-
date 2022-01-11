@@ -117,52 +117,52 @@
   
   <!-------------------------------- Modal -------------------------------->
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Center Admin</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Center Admin</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            
+                <form>
+
+                    <div class="mb-3">
+                    <label for="name" class="form-label">Admin's Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Admin's Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Admin's Password</label>
+                        <input type="text" class="form-control" id="password" ">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="center" class="form-label">Admin's Center</label>
+                        <select class="form-select" aria-label="Default select example" id="center">
+                            <option selected >Choose a center</option>
+                            <option value="CenterOne">Center One</option>
+                            <option value="CenterTwo">Center Two</option>
+                            <option value="CenterThree">Center Three</option>
+                        </select>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
+            <button type="button" class="btn btn-primary" onclick="addCA()">Save changes</button>
+            </div>
         </div>
-        <div class="modal-body">
-          
-            <form>
-
-                <div class="mb-3">
-                  <label for="name" class="form-label">Admin's Name</label>
-                  <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
-                </div>
-
-                <div class="mb-3">
-                    <label for="email" class="form-label">Admin's Email address</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                </div>
-
-                <div class="mb-3">
-                    <label for="password" class="form-label">Admin's Password</label>
-                    <input type="text" class="form-control" id="password" ">
-                </div>
-
-                <div class="mb-3">
-                    <label for="center" class="form-label">Admin's Center</label>
-                    <select class="form-select" aria-label="Default select example" id="center">
-                        <option selected >Choose a center</option>
-                        <option value="CenterOne">Center One</option>
-                        <option value="CenterTwo">Center Two</option>
-                        <option value="CenterThree">Center Three</option>
-                    </select>
-                </div>
-
-              </form>
-
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>
-          <button type="button" class="btn btn-primary" onclick="addCA()">Save changes</button>
-        </div>
-      </div>
     </div>
-  </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
