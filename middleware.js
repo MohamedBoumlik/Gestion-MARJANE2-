@@ -49,7 +49,6 @@ exports.middlewareChef = (req,res,next) => {
         
         jwt.verify(chefToken, `${process.env.JWT_SECRET_KEY}`, (err,decode)=> {
             if (decode.role == 'chef') {
-                // console.log(decode);
                 res.cookie('cRayon',decode.rayon )
                 next()
             }else{
