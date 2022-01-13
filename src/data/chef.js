@@ -68,7 +68,7 @@ refusepromo = (id) => {
 
 }
 
-// ------------------------- Update Promo Status ------------------------- 
+// ------------------------- Logout ------------------------- 
 
 logout =() => {
   const cookies = document.cookie.split(";");
